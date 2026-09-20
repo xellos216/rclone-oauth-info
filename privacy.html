@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="개인용 rclone Google Drive OAuth 앱의 데이터 접근, 저장, 이용 및 권한 철회 안내입니다.">
+  <title>개인정보처리방침 · rclone 개인용 앱</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav aria-label="페이지 탐색"><a href="./">앱 소개</a><a href="privacy.html" aria-current="page">개인정보처리방침</a></nav>
+    <p class="eyebrow">개인용 rclone OAuth 앱</p>
+    <h1>개인정보처리방침</h1>
+    <p class="lead">시행 및 최종 갱신: 2026-09-20</p>
+    <section>
+      <h2>1. 적용 범위와 운영자</h2>
+      <p>이 방침은 <a href="https://github.com/xellos216">xellos216</a>이 자신의 Google Drive 파일 동기화를 위해 등록한 개인용 OAuth 앱에 적용됩니다. 운영자 자신만 사용하는 구성이며, 제3자를 위한 파일 보관 서비스가 아닙니다.</p>
+    </section>
+    <section>
+      <h2>2. 접근하는 데이터와 이용 목적</h2>
+      <p>rclone은 파일 동기화와 결과 확인을 위해 Google Drive 파일 및 폴더의 이름, 식별자, 경로, 크기, 수정 시각, 체크섬 등 메타데이터와 작업에 필요한 파일 내용에 접근할 수 있습니다.</p>
+      <p>현재 구성은 지정된 로컬 폴더를 Google Drive 대상 폴더에 맞추는 데 사용됩니다. 이 과정에는 조회, 업로드, 갱신, 이동 및 삭제가 포함될 수 있습니다. 요청하는 Google Drive OAuth 권한은 특정 폴더에 한정되지 않으며, 실제 작업 범위는 로컬 설정으로 정합니다.</p>
+      <p>인증 시 발급되는 액세스 토큰과 갱신 토큰은 로그인 상태를 유지하고 승인된 작업을 수행하는 데 사용합니다. 앱이 Google 계정 비밀번호를 직접 수집하지는 않습니다.</p>
+    </section>
+    <section>
+      <h2>3. 저장 위치와 보관</h2>
+      <p>원본 파일은 운영자의 컴퓨터에, 동기화 사본은 운영자의 Google Drive에 저장됩니다. OAuth 인증 정보와 작업 로그는 운영자의 로컬 환경에 보관됩니다. 로그에는 파일 경로, 작업 결과 및 오류 정보가 포함될 수 있습니다.</p>
+      <p>파일과 로컬 로그는 운영자가 관리·삭제하며, 이 앱에 별도의 정기 보관 만료 정책은 정해져 있지 않습니다. Google Drive의 휴지통 및 보관 동작은 Google 서비스 설정과 정책에 따릅니다.</p>
+    </section>
+    <section>
+      <h2>4. 제3자 제공과 이용 제한</h2>
+      <p>이 앱은 승인된 동기화를 위해 Google Drive와 통신합니다. 동기화 데이터를 광고, 판매 또는 AI 모델 학습 목적으로 사용하거나 그 목적으로 제3자에게 전송하는 기능은 두지 않습니다.</p>
+      <p>Google API에서 받은 정보의 이용 및 다른 앱으로의 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>와 그 Limited Use 요건을 준수합니다.</p>
+    </section>
+    <section>
+      <h2>5. 권한 철회와 삭제</h2>
+      <p>운영자는 <a href="https://myaccount.google.com/connections">Google 계정의 연결된 앱 관리</a>에서 이 앱의 접근 권한을 철회할 수 있습니다. 로컬 자동 실행을 중지하고 rclone의 연결 설정을 제거하여 이후 접근을 중단할 수도 있습니다.</p>
+      <p>권한 철회만으로 기존 로컬 파일, Google Drive 사본 또는 로컬 로그가 자동 삭제되지는 않습니다. 이 데이터는 해당 저장 위치에서 별도로 삭제해야 합니다.</p>
+    </section>
+    <section>
+      <h2>6. 이 안내 웹사이트</h2>
+      <p>이 사이트는 GitHub Pages에 게시된 정적 안내 페이지입니다. 로그인, 파일 업로드, 광고, 방문 분석 스크립트 및 자체 쿠키를 사용하지 않으며, 동기화 데이터와 인증 토큰을 받지 않습니다.</p>
+      <p>호스팅 제공자인 GitHub는 보안과 서비스 운영을 위해 방문자의 IP 주소 등 접속 정보를 처리할 수 있습니다. 해당 처리는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>에 따릅니다.</p>
+    </section>
+    <section>
+      <h2>7. 변경 및 문의</h2>
+      <p>실제 데이터 처리 방식이 변경되면 이 페이지와 갱신 날짜를 수정합니다. 문의는 <a href="https://github.com/xellos216/rclone-oauth-info/issues">운영자의 GitHub 문의 창구</a>를 이용할 수 있습니다. 공개 문의에는 개인정보, 파일 내용, 비밀번호 또는 인증 토큰을 기재하지 마세요.</p>
+    </section>
+    <footer><a href="./">앱 소개로 돌아가기</a></footer>
+  </main>
+</body>
+</html>
